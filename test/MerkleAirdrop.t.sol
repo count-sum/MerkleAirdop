@@ -43,7 +43,7 @@ contract MerkleAirdropTest is ZkSyncChainChecker, Test {
         bytes32 digest = airdrop.getMessageHash(user, AMOUNT_TO_CLAIM);
 
         // sign a message
-        (uint8 v, bytes32 r,  bytes32 s) = vm.sign(userPrivKey, digest);
+        (uint8 v, bytes32 r, bytes32 s) = vm.sign(userPrivKey, digest);
 
         // gasPayer calls claim using the signed message
 

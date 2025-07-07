@@ -84,7 +84,6 @@ contract MerkleAirdrop is EIP712 {
                              INTERNAL
     //////////////////////////////////////////////////////////////*/
 
-
     function _isValidSignature(address account, bytes32 digest, uint8 v, bytes32 r, bytes32 s)
         internal
         pure
